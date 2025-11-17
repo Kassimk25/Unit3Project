@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Car Care</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">🚗</div>
+        <h1>Car Care</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="maintenance.html">CheckList</a>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="form-intro">
+            <h2>Car Maintenance Checklist</h2>
+            <p>This form will help track for car's most recent maintenance activities.</p>
+        </section>
+
+        <section class="form-section">
+
+            <form>
+                <fieldset>
+                    <legend>Driver Info</legend>
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="email">Email Adress:</label>
+                    <input type="email" id="email" name="email">
+
+                    <label for="car"> Car Make and Model:</label>
+                    <input type="text" id="car" name="car">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Maintenance Details</legend>
+
+                    <label for="lastOil">Last Oil Change Date:</label>
+                    <input type="date" id="lastOil" name="lastOil">
+
+                    <label for="mileage">Current Mileage:</label>
+                    <input type="number" id="mileage" name="mileage">
+
+                    <label for="type">Maintenance Type:</label>
+                    <select id="type" name="type">
+                        <option value="oil">Oil Change</option>
+                        <option value="tires">Tire Rotation</option>
+                        <option value="brakes">Brake Service</option>
+                        <option value="inspection">Inspection</option>
+                    </select>
+
+                    <label for="comments">Additional Notes:</label>
+                    <textarea id="comments" name="comments" rows="4"></textarea>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+
+        </section>
+        
+    </main>
+</body>
+</html>
